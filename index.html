@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible AI-powered tools for creators, entrepreneurs and small businesses.">
+  <title>AI Tools for Everyone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">AI Tools<span>.</span></a>
+    <a class="github" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AI made practical</p>
+      <h1>Powerful AI tools,<br><span>made accessible.</span></h1>
+      <p class="hero-copy">
+        Simple AI-powered tools for creators, entrepreneurs, small businesses, and developers.
+      </p>
+    </section>
+
+    <section class="workspace" id="workspace">
+      <aside class="tools">
+        <h2>Choose a tool</h2>
+        <button class="tool active" data-tool="writer">
+          <strong>✍️ AI Writer</strong>
+          <small>Create or improve content</small>
+        </button>
+        <button class="tool" data-tool="ideas">
+          <strong>💡 Idea Generator</strong>
+          <small>Turn problems into ideas</small>
+        </button>
+        <button class="tool" data-tool="summary">
+          <strong>📝 Summarizer</strong>
+          <small>Make long text easier to understand</small>
+        </button>
+        <button class="tool" data-tool="automation">
+          <strong>⚙️ Automation Planner</strong>
+          <small>Find tasks that AI can automate</small>
+        </button>
+      </aside>
+
+      <section class="generator">
+        <div class="generator-head">
+          <div>
+            <p class="eyebrow" id="toolLabel">AI WRITER</p>
+            <h2 id="toolTitle">Create something useful</h2>
+          </div>
+          <span class="status">● Demo mode</span>
+        </div>
+
+        <label for="prompt">Your request</label>
+        <textarea id="prompt" placeholder="Example: Write a short product description for a small online clothing business."></textarea>
+
+        <button class="generate" id="generate">Generate →</button>
+
+        <div class="result-wrap">
+          <div class="result-head">
+            <span>Result</span>
+            <button id="copy" class="copy">Copy</button>
+          </div>
+          <div id="result" class="result">
+            <span class="placeholder">Your AI-generated result will appear here.</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="vision">
+      <p class="eyebrow">The vision</p>
+      <h2>Reducing the gap between what AI can do and what people can access.</h2>
+      <p>
+        This project is an early-stage foundation for a scalable product that can bring
+        practical AI capabilities to users internationally, including markets where
+        advanced software resources may be limited.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>AI Tools for Everyone</span>
+    <span>Early-stage project • Built for accessibility</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
